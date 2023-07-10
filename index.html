@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="reg-form">Форма для реєстрації</h1>
+    <div class="form-wrapper">
+        <form class="form">
+            <div class="form-item form-name">
+                <input type="text" name="name" id="name">
+                <label for="name">Ім'я</label>
+            </div>
+
+            <div class="form-item form-surname">
+                <input type="text" name="surname" id="surname">
+                <label for="surname">Прізвище</label>
+            </div>
+
+
+            <div class="form-item form-birth">
+                <input type="text" name="birth" id="birth">
+                <label for="birth">Дата народження</label>
+            </div>
+
+
+            <div class="form-item form-gender">
+                <h2 class="form-item__title">Стать:</h2>
+                <input type="radio" name="gender" id="genderMale" class="gender" value="Чоловіча">
+                <label for="genderMale">Чоловіча</label>
+
+                <input type="radio" name="gender" id="genderFemale" class="gender" value="Жіноча">
+                <label for="genderFemale">Жіноча</label>
+
+                <input type="radio" name="gender" id="genderOther" class="gender" value="Інше">
+                <label for="genderOther">Інше</label>
+            </div>
+
+            <div class="form-item form-city">
+                <h2 class="form-item__title">Місто:</h2>
+                <select name="city" id="cityList">
+                    <option value="kyiv" selected>Київ</option>
+                    <option value="kharkiv">Харків</option>
+                    <option value="lviv">Львів</option>
+                    <option value="dnipro">Дніпро</option>
+                    <option value="odessa">Одесса</option>
+                </select>
+            </div>
+
+            <div class="form-item form-address">
+                <h2 class="form-item__title">Адреса:</h2>
+                <textarea name="address" class="textarea" id="textAreaAddress"></textarea>
+            </div>
+
+            <div class="form-item form-lang">
+                <h2 class="form-item__title">Мови, якими володіє:</h2>
+
+                <input type="checkbox" name="lang" id="langEn" class="language" value="Англійська">
+                <label for="langEn">Англійська</label>
+
+                <input type="checkbox" name="lang" id="langUa" class="language" value="Українська">
+                <label for="langUa">Українська</label>
+
+                <input type="checkbox" name="lang" id="langDe" class="language" value="Німецька">
+                <label for="langDe">Німецька</label>
+
+                <input type="checkbox" name="lang" id="langFr" class="language" value="Французька">
+                <label for="langFr">Французька</label>
+            </div>
+        </form>
+        <div class="button">
+            <button type="submit" class="button__submit" id="submit">Зберегти</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
